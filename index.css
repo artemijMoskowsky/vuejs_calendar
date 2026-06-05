@@ -1,0 +1,200 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: rgb(236, 247, 246);
+}
+
+.content-placer {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+}
+
+.calendar-div {
+    width: 75%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.calendar-settings {
+    background-color: rgb(8, 8, 59);
+}
+
+.calendar-window {
+    border: 5px solid rgb(8, 8, 59);
+    width: fit-content;
+    height: fit-content;
+}
+
+.calendar {
+    display: grid;
+    grid-template-columns: repeat(7, 100px);
+    grid-auto-rows: 100px;
+    align-items: center;
+    background-color: white;
+}
+
+.day-name {
+    text-align: center;
+    font-size: 25px;
+    font-weight: bold;
+    font-family: 'Arial';
+}
+
+.day {
+    width: 100px;
+    height: 100px;
+    border: 0;
+    font-size: 25px;
+    font-weight: bold;
+    background-color: rgb(237, 252, 255);
+}
+
+.day:hover {
+    filter: brightness(90%);
+}
+
+.unrelated {
+    background-color: rgb(233, 241, 243);
+    color: rgb(85, 85, 85);
+}
+
+.selected {
+    background-color: rgb(150, 192, 255);
+}
+
+.events-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 25%;
+}
+
+.events-window {
+    background-color: white;
+    border-radius: 25px;
+    width: 100%;
+    height: 100%;
+    padding: 20px 10px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.add-event {
+    border: 0;
+    background-color: rgb(83, 61, 209);
+    width: 100%;
+    padding: 10px;
+    border-radius: 15px;
+    color: white;
+    font-size: 25px;
+}
+
+.add-event:hover {
+    filter: brightness(90%);
+    cursor: pointer;
+}
+
+.create-event-bg {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.create-event-form {
+    background-color: white;
+    border-radius: 25px;
+    padding: 40px 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 400px;
+}
+.create-event-form label {
+    width: 100%;
+    margin-top: 30px;
+}
+
+.create-event-form input {
+    width: 100%;
+    height: 25px;
+}
+
+.create-event-form textarea {
+    width: 100%;
+    height: 100px;
+    resize: none;
+}
+
+.add-button {
+    border: 0;
+    background-color: rgb(83, 61, 209);
+    width: 75%;
+    padding: 7px 5px;
+    border-radius: 7px;
+    color: white;
+    font-size: 15px;
+    margin-top: 15px;
+}
+
+.hidden {
+    display: none;
+}
+
+.event-note-button {
+    width: 100%;
+    height: 25px;
+    background-color: rgb(253, 239, 212);
+    border: 0;
+}
+
+.event-note-button img {
+    height: 100%;
+}
+
+.event-card {
+    background-color: rgb(253, 239, 212);
+    padding: 5px;
+    box-sizing: border-box;
+    border-radius: 5px;
+    display: flex;
+}
+
+.event-filling {
+    width: 100%;
+}
+
+hr {
+    border: 0;
+    height: 1px;
+    background-color: black;
+}
+
+.delete-event {
+    width: 50px;
+    height: 50px;
+    background-color: rgb(146, 0, 0);
+    border: 1px solid white;
+    color: white;
+    border-radius: 5px;
+    box-sizing: border-box;
+    aspect-ratio: 1 / 1;
+}
+
+.delete-event:hover {
+    cursor: pointer;
+    filter: brightness(90%);
+}
